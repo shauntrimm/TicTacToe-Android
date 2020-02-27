@@ -9,7 +9,7 @@ Last Modified On: 2-27-2020
 Assignment: A290 Final Project Phase 3
 -->
 <resources>
-    <color name="colorPrimary">@android:color/background_holo_light</color>
+    <color name="colorPrimary">#fff3f3f3</color>
     <color name="colorPrimaryDark">#fff3f3f3</color>
     <color name="colorAccent">#D81B60</color>
 </resources>
