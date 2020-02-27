@@ -12,6 +12,15 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+/*
+MainActivity.java
+Controls the Home screen
+Created By: Shaun Trimm
+Created On: 2-26-2020
+Last Modified By: Shaun Trimm
+Last Modified On: 2-27-2020
+Assignment: A290 Final Project Phase 3
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override

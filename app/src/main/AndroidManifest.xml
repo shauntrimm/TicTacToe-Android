@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+AndroidManifest.xml
+Controls permissions for java classes to create intents
+Created By: Shaun Trimm
+Created On: 2-26-2020
+Last Modified By: Shaun Trimm
+Last Modified On: 2-27-2020
+Assignment: A290 Final Project Phase 3
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.indiana.strimm.tictactoe">
 

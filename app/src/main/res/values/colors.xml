@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+colors.xml
+Stores the Color values for this application
+Created By: Shaun Trimm
+Created On: 2-26-2020
+Last Modified By: Shaun Trimm
+Last Modified On: 2-27-2020
+Assignment: A290 Final Project Phase 3
+-->
 <resources>
-    <color name="colorPrimary">#fff3f3f3</color>
+    <color name="colorPrimary">@android:color/background_holo_light</color>
     <color name="colorPrimaryDark">#fff3f3f3</color>
     <color name="colorAccent">#D81B60</color>
 </resources>
