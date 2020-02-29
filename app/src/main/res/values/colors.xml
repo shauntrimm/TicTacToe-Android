@@ -9,9 +9,16 @@ Last Modified On: 2-28-2020
 Assignment: A290 Final Project Phase 3
 -->
 <resources>
-    <!-- Toolbar color -->
+    <!-- Toolbar colors -->
     <color name="colorPrimary">#fafafa</color>
-
+    <color name="toolbar_text_color">#808080</color>
     <color name="colorPrimaryDark">#fff3f3f3</color>
+
+
     <color name="colorAccent">#D81B60</color>
+
+
+    <!-- Color values that may be used -->
+    <color name="blue">#006cff</color>
+    <color name="red">#f5364d</color>
 </resources>

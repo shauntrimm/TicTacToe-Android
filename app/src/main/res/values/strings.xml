@@ -15,4 +15,5 @@ Assignment: A290 Final Project Phase 3
 
     <!-- String resources for the Home Screen -->
     <string name="start_game">Start Game</string>
+    <string name="about_text">About</string>
 </resources>
