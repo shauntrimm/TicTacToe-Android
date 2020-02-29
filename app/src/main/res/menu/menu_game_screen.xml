@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="edu.indiana.strimm.tictactoe.MainActivity">
+    tools:context="edu.indiana.strimm.tictactoe.GameScreenActivity">
 
     <!--
 menu_game_screen.xml
@@ -14,13 +14,13 @@ Last Modified On: 2-28-2020
 Assignment: A290 Final Project Phase 3
 -->
     <item
-        android:icon="@drawable/arrow_back-24px"
-        android:title="uhh"
-        android:id="backarrow"
+        android:title="Back"
+        android:icon="@drawable/arrow_back24px"
+        android:id="@+id/game_back_arrow"
         app:showAsAction="always"
         />
     <item
-        android:id="@+id/action_about"
+        android:id="@+id/action_about_game"
         android:title="@string/about_text"
         app:showAsAction="ifRoom"
         />

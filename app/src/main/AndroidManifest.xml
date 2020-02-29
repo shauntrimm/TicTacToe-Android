@@ -17,9 +17,9 @@ Assignment: A290 Final Project Phase 3
         android:label="Tic Tac Toe"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.NoTitleBar"
+        android:theme="@style/AppTheme"
         >
-        <!--android:theme="@style/AppTheme"-->
+
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

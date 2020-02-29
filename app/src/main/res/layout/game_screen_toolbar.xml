@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+activity_main.xml
+Controls the Toolbar and Appbar for the home screen
+Created By: Shaun Trimm
+Created On: 2-25-2020
+Last Modified By: Shaun Trimm
+Last Modified On: 2-28-2020
+Assignment: A290 Final Project Phase 3
+-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameScreenActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarStyle">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/game_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/game_screen" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
