@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 /*
 GameScreenActivity.java
-Controls the Home screen
+Controls the Game Screen
 Created By: Shaun Trimm
 Created On: 2-28-2020
 Last Modified By: Shaun Trimm

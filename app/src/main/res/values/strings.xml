@@ -10,7 +10,7 @@ Assignment: A290 Final Project Phase 3
 -->
 
     <!-- String resources automatically generated -->
-    <string name="app_name">TicTacToe</string>
+    <string name="app_name">Tic Tac Toe</string>
     <string name="action_settings">Settings</string>
 
     <!-- String resources for the Home Screen -->
