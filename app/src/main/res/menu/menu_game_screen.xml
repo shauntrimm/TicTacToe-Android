@@ -14,8 +14,9 @@ Last Modified On: 2-28-2020
 Assignment: A290 Final Project Phase 3
 -->
     <item
+        android:icon="@drawable/arrow_back-24px"
+        android:title="uhh"
         android:id="backarrow"
-        android:icon="arrow_back"
         app:showAsAction="always"
         />
     <item
