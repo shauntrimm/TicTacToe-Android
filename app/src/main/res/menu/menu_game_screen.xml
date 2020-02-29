@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.indiana.strimm.tictactoe.MainActivity">
+
+    <!--
+menu_game_screen.xml
+Controls the items on the toolbar on the Game Screen
+Created By: Shaun Trimm
+Created On: 2-28-2020
+Last Modified By: Shaun Trimm
+Last Modified On: 2-28-2020
+Assignment: A290 Final Project Phase 3
+-->
+    <item
+        android:id="backarrow"
+        android:icon="arrow_back"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/about_text"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>
