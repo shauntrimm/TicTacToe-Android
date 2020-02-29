@@ -13,8 +13,8 @@ Last Modified On: 2-28-2020
 Assignment: A290 Final Project Phase 3
 -->
     <item
-        android:id="@+id/action_about"
+        android:id="@+id/itmHomeAbout"
         android:title="About"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         />
 </menu>

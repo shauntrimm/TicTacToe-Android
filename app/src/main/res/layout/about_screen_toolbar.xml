@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-activity_main.xml
-Controls the Toolbar and Appbar for the home screen
+about_screen_toolbar.xml
+Controls the Toolbar and Appbar for the about screen
 Created By: Shaun Trimm
-Created On: 2-25-2020
+Created On: 2-29-2020
 Last Modified By: Shaun Trimm
 Last Modified On: 2-29-2020
 Assignment: A290 Final Project Phase 3
@@ -13,7 +13,7 @@ Assignment: A290 Final Project Phase 3
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameScreenActivity">
+    tools:context=".AboutGameActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@ Assignment: A290 Final Project Phase 3
         android:theme="@style/ToolbarStyle">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/tlbrGame"
+            android:id="@+id/tlbrAbout"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/colorPrimary"
@@ -31,7 +31,7 @@ Assignment: A290 Final Project Phase 3
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/game_screen" />
+    <include layout="@layout/about_screen" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

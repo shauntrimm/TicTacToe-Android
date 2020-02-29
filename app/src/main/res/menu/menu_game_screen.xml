@@ -16,13 +16,13 @@ Assignment: A290 Final Project Phase 3
     <item
         android:title="Back"
         android:icon="@drawable/arrow_back24px"
-        android:id="@+id/game_back_arrow"
+        android:id="@+id/itmGameBackArrow"
         app:showAsAction="always"
         />
     <item
         android:id="@+id/action_about_game"
         android:title="@string/about_text"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         />
 
 

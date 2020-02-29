@@ -3,9 +3,6 @@ package edu.indiana.strimm.tictactoe;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -20,7 +17,7 @@ Controls the Game Screen
 Created By: Shaun Trimm
 Created On: 2-28-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 2-28-2020
+Last Modified On: 2-29-2020
 Assignment: A290 Final Project Phase 3
  */
 
@@ -30,7 +27,7 @@ public class GameScreenActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game_screen_toolbar);
-        Toolbar toolbar = findViewById(R.id.game_toolbar);
+        Toolbar toolbar = findViewById(R.id.tlbrGame);
         setSupportActionBar(toolbar);
 
         //keeps the title text from showing

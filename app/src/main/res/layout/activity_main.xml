@@ -21,7 +21,7 @@ Assignment: A290 Final Project Phase 3
         android:theme="@style/ToolbarStyle">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/tlbrHome"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/colorPrimary"
