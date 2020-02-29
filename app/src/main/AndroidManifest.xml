@@ -30,7 +30,7 @@ Assignment: A290 Final Project Phase 3
             </intent-filter>
         </activity>
         <activity
-            android:name=".GameScreenActivity"
+            android:name="edu.indiana.strimm.tictactoe.GameScreenActivity"
             android:theme="@style/AppTheme.NoActionBar"
             ></activity>
     </application>

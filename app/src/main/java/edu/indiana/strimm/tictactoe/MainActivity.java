@@ -1,5 +1,6 @@
 package edu.indiana.strimm.tictactoe;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -8,6 +9,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,11 +20,11 @@ Controls the Home screen
 Created By: Shaun Trimm
 Created On: 2-25-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 2-26-2020
+Last Modified On: 2-28-2020
 Assignment: A290 Final Project Phase 3
  */
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,5 +55,13 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    //Processes clicks on different buttons in the Home Screen
+    public void onClick(View v){
+        if(v.getId() == R.id.btnStartGame){
+            startActivity(new Intent(this, GameScreenActivity.class));
+        }
+
     }
 }
