@@ -99,9 +99,11 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         else if(id == R.id.itmGameBackArrow){
             super.onBackPressed();
         }
+        //If the clear button is pressed
         else if(id == R.id.itmGameClear){
             clearGrid();
         }
+        //If the undo button is pressed
         else if(id == R.id.itmGameUndo){
             undo();
         }
@@ -150,6 +152,7 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         }
     }
 
+    //Clears all images off of the game grid
     public void clearGrid(){
         for(int i = 0; i < images.length; i++){
             for(int j = 0; j < images[i].length; j++){
@@ -158,6 +161,7 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         }
     }
 
+    //Undos the last move made by the user
     public void undo(){
         if(editedImages.peek() != null){
             editedImages.pop().setImageDrawable(null);
