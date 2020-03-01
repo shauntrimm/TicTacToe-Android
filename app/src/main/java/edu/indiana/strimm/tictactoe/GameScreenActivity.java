@@ -1,11 +1,7 @@
 package edu.indiana.strimm.tictactoe;
 
 import android.content.Intent;
-import android.graphics.Canvas;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-
-import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
@@ -99,42 +95,36 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         if (id == R.id.itmGameAboutGame) {
             startActivity(new Intent(this, AboutGameActivity.class));
         }
+        //If the back arrow is clicked
         else if(id == R.id.itmGameBackArrow){
             super.onBackPressed();
+        }
+        else if(id == R.id.itmGameClear){
+            clearGrid();
+        }
+        else if(id == R.id.itmGameUndo){
+            undo();
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    //Processes clicks on different buttons in the Game Screen
+    //Processes clicks on image views in the Game Screen
     public void onClick(View v){
+        ImageView iV = findViewById(v.getId());
         //Processes clicks to the different image views
-        if(v.getId() == R.id.imageView){
-            images[0][0].setVisibility(View.INVISIBLE);
-        }
-        else if(v.getId() == R.id.imageView2){
-            images[0][1].setVisibility(View.INVISIBLE);
-        }
-        else if(v.getId() == R.id.imageView3){
-            images[0][2].setVisibility(View.INVISIBLE);
-        }
-        else if(v.getId() == R.id.imageView4){
-            images[1][0].setVisibility(View.INVISIBLE);
-        }
-        else if(v.getId() == R.id.imageView5){
-            images[1][1].setVisibility(View.INVISIBLE);
-        }
-        else if(v.getId() == R.id.imageView6){
-            images[1][2].setVisibility(View.INVISIBLE);
-        }
-        else if(v.getId() == R.id.imageView7){
-            images[2][0].setVisibility(View.INVISIBLE);
-        }
-        else if(v.getId() == R.id.imageView8){
-            images[2][1].setVisibility(View.INVISIBLE);
-        }
-        else if(v.getId() == R.id.imageView9){
-            images[2][2].setVisibility(View.INVISIBLE);
+        if(iV.getDrawable() == null) {
+            if (selectedShape == 0) {
+                //draws the shape
+                iV.setImageDrawable(rbtnCircleOption.getCompoundDrawables()[2]);
+                //adds the ImageView to the edited stack
+                editedImages.add(iV);
+            } else if (selectedShape == 1) {
+                //draws the shape
+                iV.setImageDrawable(rbtnXOption.getCompoundDrawables()[2]);
+                //adds the ImageView to the edited stack
+                editedImages.add(iV);
+            }
         }
     }
 
@@ -160,6 +150,18 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         }
     }
 
-    public void drawShape(ImageView iv){}
+    public void clearGrid(){
+        for(int i = 0; i < images.length; i++){
+            for(int j = 0; j < images[i].length; j++){
+                images[i][j].setImageDrawable(null);
+            }
+        }
+    }
+
+    public void undo(){
+        if(editedImages.peek() != null){
+            editedImages.pop().setImageDrawable(null);
+        }
+    }
 
 }
