@@ -5,7 +5,7 @@ Controls the layout for the game screen
 Created By: Shaun Trimm
 Created On: 2-28-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 2-28-2020
+Last Modified On: 3-1-2020
 Assignment: A290 Final Project Phase 3
 -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -136,19 +136,19 @@ Assignment: A290 Final Project Phase 3
         app:srcCompat="@color/toolbar_text_color" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rbtnCircleOption"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableRight=""
+            android:drawableRight="@drawable/blankimage"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rbtnXOption"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft=""
+            android:drawableLeft="@drawable/blankimage"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView9" />

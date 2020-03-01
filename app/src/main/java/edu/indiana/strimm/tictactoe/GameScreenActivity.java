@@ -1,13 +1,18 @@
 package edu.indiana.strimm.tictactoe;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+
+import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+
 import java.util.Stack;
 
 /*
@@ -16,7 +21,7 @@ Controls the Game Screen
 Created By: Shaun Trimm
 Created On: 2-28-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 2-29-2020
+Last Modified On: 3-1-2020
 Assignment: A290 Final Project Phase 3
  */
 
@@ -25,6 +30,9 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
     ImageView[][] images = new ImageView[3][3]; //Stores the image views that hold x's and o's
     int colorStyle;
     Stack<ImageView> editedImages = new Stack();
+    static final String COLOR_SCHEME = "edu.indiana.strimm.tictactoe.color";
+    RadioButton rbtnCircleOption;
+    RadioButton rbtnXOption;
 
 
     @Override
@@ -33,6 +41,23 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.game_screen_toolbar);
         Toolbar toolbar = findViewById(R.id.tlbrGame);
         setSupportActionBar(toolbar);
+
+        rbtnCircleOption = findViewById(R.id.rbtnCircleOption);
+        rbtnXOption = findViewById(R.id.rbtnXOption);
+
+        //Retrieves the extra value passed from MainActivity to determine the color scheme
+        colorStyle = this.getIntent().getIntExtra(COLOR_SCHEME, 0);
+
+        //Sets the images for the radio buttons based on color scheme
+        if(colorStyle == 0){
+            rbtnCircleOption.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.blueredcircle100, 0);
+            rbtnXOption.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.blueredx100, 0);
+
+        }
+        else if(colorStyle == 1){
+            rbtnCircleOption.setRight(R.drawable.yellowpurplecircle100);
+            rbtnXOption.setRight(R.drawable.yellowpurplex100);
+        }
 
         //keeps the title text from showing
         getSupportActionBar().setTitle(null);
