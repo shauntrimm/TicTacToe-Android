@@ -2,15 +2,13 @@ package edu.indiana.strimm.tictactoe;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
-import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import java.util.Stack;
 
 /*
 GameScreenActivity.java
@@ -26,6 +24,7 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
 
     ImageView[][] images = new ImageView[3][3]; //Stores the image views that hold x's and o's
     int colorStyle;
+    Stack<ImageView> editedImages = new Stack();
 
 
     @Override
