@@ -14,7 +14,7 @@ Assignment: A290 Final Project Phase 3
 -->
     <item
         android:id="@+id/itmHomeAbout"
-        android:title="About"
+        android:title="@string/about_text"
         app:showAsAction="always"
         />
 </menu>
