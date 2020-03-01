@@ -13,7 +13,7 @@ Assignment: A290 Final Project Phase 3
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="Tic Tac Toe"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
