@@ -1,6 +1,7 @@
 package edu.indiana.strimm.tictactoe;
 
 import android.content.Intent;
+import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
@@ -28,11 +29,12 @@ Assignment: A290 Final Project Phase 3
 public class GameScreenActivity extends AppCompatActivity implements View.OnClickListener{
 
     ImageView[][] images = new ImageView[3][3]; //Stores the image views that hold x's and o's
-    int colorStyle;
-    Stack<ImageView> editedImages = new Stack();
+    int colorStyle; //Stores the value for the color style
+    Stack<ImageView> editedImages = new Stack(); //Stores the edited imageviews in the order in which they are edited
     static final String COLOR_SCHEME = "edu.indiana.strimm.tictactoe.color";
     RadioButton rbtnCircleOption;
     RadioButton rbtnXOption;
+    int selectedShape; //Stores the value for the selected shape 0 for circle 1 for x
 
 
     @Override
@@ -55,12 +57,16 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
 
         }
         else if(colorStyle == 1){
-            rbtnCircleOption.setRight(R.drawable.yellowpurplecircle100);
-            rbtnXOption.setRight(R.drawable.yellowpurplex100);
+            rbtnCircleOption.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.yellowpurplecircle100, 0);
+            rbtnXOption.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.yellowpurplex100, 0);
         }
 
         //keeps the title text from showing
         getSupportActionBar().setTitle(null);
+
+        //Initialize the Circle radio button to be checked by default
+        rbtnCircleOption.setChecked(true);
+        selectedShape = 0;
 
         //Initialize images 2d Array
         images[0][0] = findViewById(R.id.imageView);
@@ -130,6 +136,30 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         else if(v.getId() == R.id.imageView9){
             images[2][2].setVisibility(View.INVISIBLE);
         }
-
     }
+
+    //Handles radio button selections in the game screen
+    public void onRadioButtonClicked(View v){
+        RadioButton rb = findViewById(v.getId());
+
+        if(rb.getId() == R.id.rbtnCircleOption){
+            //Checks if the other option is checked
+            if(rbtnXOption.isChecked()){
+                //Unchecks the other option
+                rbtnXOption.setChecked(false);
+            }
+            this.selectedShape = 0;
+        }
+        else if(rb.getId() == R.id.rbtnXOption){
+            //Checks if the other option is checked
+            if(rbtnCircleOption.isChecked()){
+                //Unchecks the other option
+                rbtnCircleOption.setChecked(false);
+            }
+            this.selectedShape = 1;
+        }
+    }
+
+    public void drawShape(ImageView iv){}
+
 }

@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    //Handles radio button selections
     public void onRadioButtonClicked(View v){
         RadioButton rb = (RadioButton) v;
         //If the button click is the Blue Red color option radio button
