@@ -51,7 +51,10 @@ public class GameScreenActivity extends AppCompatActivity {
 
         //If the About icon is clicked
         if (id == R.id.itmGameAboutGame) {
-            return true;
+            startActivity(new Intent(this, AboutGameActivity.class));
+        }
+        else if(id == R.id.itmGameBackArrow){
+            super.onBackPressed();
         }
 
         return super.onOptionsItemSelected(item);

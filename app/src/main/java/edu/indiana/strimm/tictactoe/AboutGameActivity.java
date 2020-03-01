@@ -47,7 +47,7 @@ public class AboutGameActivity extends AppCompatActivity {
 
         //If the About icon is clicked
         if (id == R.id.itmAboutBackArrow) {
-            return true;
+            super.onBackPressed();
         }
 
         return super.onOptionsItemSelected(item);
