@@ -50,7 +50,7 @@ public class GameScreenActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //If the About icon is clicked
-        if (id == R.id.action_about_game) {
+        if (id == R.id.itmGameAboutGame) {
             return true;
         }
 

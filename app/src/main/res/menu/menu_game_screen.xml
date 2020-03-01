@@ -20,7 +20,7 @@ Assignment: A290 Final Project Phase 3
         app:showAsAction="always"
         />
     <item
-        android:id="@+id/action_about_game"
+        android:id="@+id/itmGameAboutGame"
         android:title="@string/about_text"
         app:showAsAction="always"
         />

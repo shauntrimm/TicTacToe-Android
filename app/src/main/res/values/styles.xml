@@ -5,7 +5,7 @@ Stores all of the styles for this application
 Created By: Shaun Trimm
 Created On: 2-25-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 2-28-2020
+Last Modified On: 2-29-2020
 Assignment: A290 Final Project Phase 3
 -->
 
@@ -15,6 +15,11 @@ Assignment: A290 Final Project Phase 3
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Sets status bar text to a darker color -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">true</item>
+
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -26,8 +31,14 @@ Assignment: A290 Final Project Phase 3
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
+    <!-- Styles added by me -->
     <style name="ToolbarStyle" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:textColorPrimary">@color/toolbar_text_color</item>
     </style>
+
+
+
+
 
 </resources>

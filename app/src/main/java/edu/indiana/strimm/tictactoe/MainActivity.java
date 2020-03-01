@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        int id = item.getItemId();
 
       //If the About icon is clicked
-       if (id == R.id.action_about) {
-           return true;
+       if (id == R.id.itmHomeAbout) {
+           startActivity(new Intent(this, AboutGameActivity.class));
        }
 
        return super.onOptionsItemSelected(item);
