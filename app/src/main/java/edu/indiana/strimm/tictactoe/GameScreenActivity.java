@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 /*
 GameScreenActivity.java
@@ -21,7 +22,11 @@ Last Modified On: 2-29-2020
 Assignment: A290 Final Project Phase 3
  */
 
-public class GameScreenActivity extends AppCompatActivity {
+public class GameScreenActivity extends AppCompatActivity implements View.OnClickListener{
+
+    ImageView[][] images = new ImageView[3][3]; //Stores the image views that hold x's and o's
+    int colorStyle;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState){
@@ -32,6 +37,17 @@ public class GameScreenActivity extends AppCompatActivity {
 
         //keeps the title text from showing
         getSupportActionBar().setTitle(null);
+
+        //Initialize images 2d Array
+        images[0][0] = findViewById(R.id.imageView);
+        images[0][1] = findViewById(R.id.imageView2);
+        images[0][2] = findViewById(R.id.imageView3);
+        images[1][0] = findViewById(R.id.imageView4);
+        images[1][1] = findViewById(R.id.imageView5);
+        images[1][2] = findViewById(R.id.imageView6);
+        images[2][0] = findViewById(R.id.imageView7);
+        images[2][1] = findViewById(R.id.imageView8);
+        images[2][2] = findViewById(R.id.imageView9);
 
     }
 
@@ -58,5 +74,38 @@ public class GameScreenActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    //Processes clicks on different buttons in the Game Screen
+    public void onClick(View v){
+        //Processes clicks to the different image views
+        if(v.getId() == R.id.imageView){
+            images[0][0].setVisibility(View.INVISIBLE);
+        }
+        else if(v.getId() == R.id.imageView2){
+            images[0][1].setVisibility(View.INVISIBLE);
+        }
+        else if(v.getId() == R.id.imageView3){
+            images[0][2].setVisibility(View.INVISIBLE);
+        }
+        else if(v.getId() == R.id.imageView4){
+            images[1][0].setVisibility(View.INVISIBLE);
+        }
+        else if(v.getId() == R.id.imageView5){
+            images[1][1].setVisibility(View.INVISIBLE);
+        }
+        else if(v.getId() == R.id.imageView6){
+            images[1][2].setVisibility(View.INVISIBLE);
+        }
+        else if(v.getId() == R.id.imageView7){
+            images[2][0].setVisibility(View.INVISIBLE);
+        }
+        else if(v.getId() == R.id.imageView8){
+            images[2][1].setVisibility(View.INVISIBLE);
+        }
+        else if(v.getId() == R.id.imageView9){
+            images[2][2].setVisibility(View.INVISIBLE);
+        }
+
     }
 }
