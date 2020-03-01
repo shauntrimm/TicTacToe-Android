@@ -18,6 +18,68 @@ Assignment: A290 Final Project Phase 3
     tools:showIn="@layout/game_screen_toolbar"
     >
 
+    <!-- Leftmost Vertical Line in the grid -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="440dp"
+        android:background="@color/toolbar_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/rbtnCircleOption"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0">
+
+    </View>
+
+    <!-- Rightmost Vertical line in the grid -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="440dp"
+        android:background="@color/toolbar_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/rbtnCircleOption"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0">
+
+    </View>
+
+    <!-- Uppermost Horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/toolbar_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <!-- View used to block out extra line -->
+
+    <!-- Lowermost Horizontal line -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243"></View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/toolbar_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"></View>
+
     <ImageView
         android:id="@+id/imageView"
         android:onClick="onClick"
@@ -46,9 +108,9 @@ Assignment: A290 Final Project Phase 3
 
     <ImageView
         android:id="@+id/imageView3"
-        android:onClick="onClick"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.887"
