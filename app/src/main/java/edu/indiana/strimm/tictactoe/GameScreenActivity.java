@@ -72,15 +72,15 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         selectedShape = 0;
 
         //Initialize images 2d Array
-        images[0][0] = findViewById(R.id.imageView);
-        images[0][1] = findViewById(R.id.imageView2);
-        images[0][2] = findViewById(R.id.imageView3);
-        images[1][0] = findViewById(R.id.imageView4);
-        images[1][1] = findViewById(R.id.imageView5);
-        images[1][2] = findViewById(R.id.imageView6);
-        images[2][0] = findViewById(R.id.imageView7);
-        images[2][1] = findViewById(R.id.imageView8);
-        images[2][2] = findViewById(R.id.imageView9);
+        images[0][0] = findViewById(R.id.imgView1);
+        images[0][1] = findViewById(R.id.imgView2);
+        images[0][2] = findViewById(R.id.imgView3);
+        images[1][0] = findViewById(R.id.imgView4);
+        images[1][1] = findViewById(R.id.imgView5);
+        images[1][2] = findViewById(R.id.imgView6);
+        images[2][0] = findViewById(R.id.imgView7);
+        images[2][1] = findViewById(R.id.imgView8);
+        images[2][2] = findViewById(R.id.imgView9);
 
     }
 

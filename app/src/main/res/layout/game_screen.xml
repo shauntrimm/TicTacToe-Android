@@ -25,9 +25,9 @@ Assignment: A290 Final Project Phase 3
         android:layout_height="440dp"
         android:background="@color/toolbar_text_color"
         app:layout_constraintBottom_toTopOf="@+id/rbtnCircleOption"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imgView5"
+        app:layout_constraintStart_toEndOf="@+id/imgView4"
+        app:layout_constraintTop_toTopOf="@+id/imgView1"
         app:layout_constraintVertical_bias="1.0">
 
     </View>
@@ -38,10 +38,10 @@ Assignment: A290 Final Project Phase 3
         android:layout_height="440dp"
         android:background="@color/toolbar_text_color"
         app:layout_constraintBottom_toTopOf="@+id/rbtnCircleOption"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/imgView6"
         app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imgView5"
+        app:layout_constraintTop_toTopOf="@+id/imgView3"
         app:layout_constraintVertical_bias="1.0">
 
     </View>
@@ -51,15 +51,12 @@ Assignment: A290 Final Project Phase 3
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/toolbar_text_color"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintBottom_toTopOf="@+id/imgView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imgView2" />
 
     <!-- View used to block out extra line -->
-
-    <!-- Lowermost Horizontal line -->
-
     <View
         android:layout_width="match_parent"
         android:layout_height="102dp"
@@ -71,29 +68,30 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.243"></View>
 
+    <!-- Lowermost Horizontal line -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/toolbar_text_color"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintBottom_toTopOf="@+id/imgView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"></View>
+        app:layout_constraintTop_toBottomOf="@+id/imgView5"></View>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgView1"
         android:onClick="onClick"
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/imgView2"
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.229" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgView2"
         android:onClick="onClick"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -105,30 +103,30 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintVertical_bias="0.229" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgView3"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.887"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imgView2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.229" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgView4"
         android:onClick="onClick"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView7"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintBottom_toTopOf="@+id/imgView7"
+        app:layout_constraintEnd_toStartOf="@+id/imgView5"
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imgView1" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgView5"
         android:onClick="onClick"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -140,31 +138,31 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintVertical_bias="0.478" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imgView6"
         android:onClick="onClick"
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.892"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imgView5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.478" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imgView7"
         android:onClick="onClick"
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/imgView8"
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.726" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imgView8"
         android:onClick="onClick"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -174,17 +172,17 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.726"
-        app:layout_constraintLeft_toRightOf="@+id/imageView7" />
+        app:layout_constraintLeft_toRightOf="@+id/imgView7" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imgView9"
         android:onClick="onClick"
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.892"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/imgView8"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.726" />
 
@@ -196,7 +194,7 @@ Assignment: A290 Final Project Phase 3
             android:onClick="onRadioButtonClicked"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+            app:layout_constraintTop_toBottomOf="@+id/imgView7" />
 
         <RadioButton
             android:id="@+id/rbtnXOption"
@@ -206,7 +204,7 @@ Assignment: A290 Final Project Phase 3
             android:onClick="onRadioButtonClicked"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+            app:layout_constraintTop_toBottomOf="@+id/imgView9" />
 
 
 
