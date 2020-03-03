@@ -25,7 +25,7 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
 
     ImageView[][] images = new ImageView[3][3]; //Stores the image views that hold x's and o's
     int colorStyle; //Stores the value for the color style
-    Stack<ImageView> editedImages = new Stack(); //Stores the edited imageviews in the order in which they are edited
+    Stack<ImageView> editedImages = new Stack<ImageView>(); //Stores the edited imageviews in the order in which they are edited
     static final String COLOR_SCHEME = "edu.indiana.strimm.tictactoe.color";
     RadioButton rbtnCircleOption;
     RadioButton rbtnXOption;
@@ -104,7 +104,7 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         }
         //If the undo button is pressed
         else if(id == R.id.itmGameUndo){
-            undo();
+                undo();
         }
 
         return super.onOptionsItemSelected(item);
@@ -120,11 +120,17 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
                 iV.setImageDrawable(rbtnCircleOption.getCompoundDrawables()[2]);
                 //adds the ImageView to the edited stack
                 editedImages.add(iV);
+                selectedShape = 1;
+                this.rbtnXOption.setChecked(true);
+                this.rbtnCircleOption.setChecked(false);
             } else if (selectedShape == 1) {
                 //draws the shape
                 iV.setImageDrawable(rbtnXOption.getCompoundDrawables()[2]);
                 //adds the ImageView to the edited stack
                 editedImages.add(iV);
+                selectedShape = 0;
+                this.rbtnXOption.setChecked(false);
+                this.rbtnCircleOption.setChecked(true);
             }
         }
     }
@@ -162,7 +168,7 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
 
     //Undos the last move made by the user
     public void undo(){
-        if(editedImages.peek() != null){
+        if(!editedImages.isEmpty()){
             editedImages.pop().setImageDrawable(null);
         }
     }
