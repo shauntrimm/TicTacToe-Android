@@ -10,7 +10,7 @@ Controls the items on the toolbar on the Game Screen
 Created By: Shaun Trimm
 Created On: 2-28-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 2-28-2020
+Last Modified On: 3-3-2020
 Assignment: A290 Final Project Phase 3
 -->
     <item
@@ -20,12 +20,12 @@ Assignment: A290 Final Project Phase 3
         app:showAsAction="always"
         />
     <item
-        android:title="Undo"
+        android:title="@string/undo_text"
         android:id="@+id/itmGameUndo"
         app:showAsAction="always"
         ></item>
     <item
-        android:title="Clear"
+        android:title="@string/clear_text"
         android:id="@+id/itmGameClear"
         app:showAsAction="always"
         ></item>

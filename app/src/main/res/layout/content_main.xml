@@ -5,7 +5,7 @@ Controls the layout for the home screen
 Created By: Shaun Trimm
 Created On: 2-25-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 3-1-2020
+Last Modified On: 3-3-2020
 Assignment: A290 Final Project Phase 3
 -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -36,6 +36,7 @@ Assignment: A290 Final Project Phase 3
         android:layout_height="wrap_content"
         android:onClick="onClick"
         android:text="@string/start_game"
+        android:backgroundTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -47,7 +48,7 @@ Assignment: A290 Final Project Phase 3
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
-        android:drawableRight="@drawable/yellowpurplecircle100"
+        android:drawableRight="@drawable/selectionyellowpurple"
         android:onClick="onRadioButtonClicked"
         app:layout_constraintBottom_toTopOf="@+id/btnStartGame"
         app:layout_constraintEnd_toEndOf="@+id/rbtnBlueRedOption"
@@ -61,11 +62,11 @@ Assignment: A290 Final Project Phase 3
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:drawableRight="@drawable/blueredcircle100"
-        android:onClick="onRadioButtonClicked"
         android:checked="true"
+        android:drawableRight="@drawable/selectionbluered"
+        android:onClick="onRadioButtonClicked"
         app:layout_constraintBottom_toTopOf="@+id/rbtnYellowPurpleOption"
-        app:layout_constraintEnd_toStartOf="@+id/btnStartGame"
+        app:layout_constraintEnd_toEndOf="@+id/btnStartGame"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtLogo"
         app:layout_constraintVertical_bias="0.512">

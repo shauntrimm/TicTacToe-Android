@@ -5,7 +5,7 @@ Stores the Color values for this application
 Created By: Shaun Trimm
 Created On: 2-25-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 2-28-2020
+Last Modified On: 3-3-2020
 Assignment: A290 Final Project Phase 3
 -->
 <resources>
@@ -15,7 +15,7 @@ Assignment: A290 Final Project Phase 3
     <color name="colorPrimaryDark">#fff3f3f3</color>
 
 
-    <color name="colorAccent">#D81B60</color>
+    <!-- <color name="colorAccent">#D81B60</color> -->
 
 
     <!-- Color values that may be used -->
