@@ -13,12 +13,7 @@ Last Modified By: Shaun Trimm
 Last Modified On: 3-3-2020
 Assignment: A290 Final Project Phase 3
 -->
-    <item
-        android:title="Back"
-        android:icon="@drawable/arrow_back24px"
-        android:id="@+id/itmGameBackArrow"
-        app:showAsAction="always"
-        />
+
     <item
         android:title="@string/undo_text"
         android:id="@+id/itmGameUndo"

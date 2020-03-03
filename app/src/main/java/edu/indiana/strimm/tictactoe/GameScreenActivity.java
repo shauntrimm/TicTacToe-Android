@@ -38,6 +38,14 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.game_screen_toolbar);
         Toolbar toolbar = findViewById(R.id.tlbrGame);
         setSupportActionBar(toolbar);
+        //Adds the back arrow to the toolbar
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
+        //Adds an onClick method for the back arrow
+        toolbar.setNavigationOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                finish();
+            }
+        });
 
         rbtnCircleOption = findViewById(R.id.rbtnCircleOption);
         rbtnXOption = findViewById(R.id.rbtnXOption);
@@ -93,10 +101,6 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         //If the About icon is clicked
         if (id == R.id.itmGameAboutGame) {
             startActivity(new Intent(this, AboutGameActivity.class));
-        }
-        //If the back arrow is clicked
-        else if(id == R.id.itmGameBackArrow){
-            super.onBackPressed();
         }
         //If the clear button is pressed
         else if(id == R.id.itmGameClear){
