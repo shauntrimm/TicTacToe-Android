@@ -5,7 +5,7 @@ Controls the layout for the home screen
 Created By: Shaun Trimm
 Created On: 2-25-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 3-3-2020
+Last Modified On: 3-5-2020
 Assignment: A290 Final Project Phase 3
 -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,18 +17,30 @@ Assignment: A290 Final Project Phase 3
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
+
     <TextView
         android:id="@+id/txtLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tic-Tac-Toe"
+        android:text="@string/app_heading"
         android:textSize="30pt"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/txtChooseColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/choose_color_text"
+        android:textSize="12pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogo"></TextView>
 
     <Button
         android:id="@+id/btnStartGame"
@@ -47,7 +59,7 @@ Assignment: A290 Final Project Phase 3
         android:id="@+id/rbtnYellowPurpleOption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="24dp"
         android:drawableRight="@drawable/selectionyellowpurple"
         android:onClick="onRadioButtonClicked"
         app:layout_constraintBottom_toTopOf="@+id/btnStartGame"
@@ -68,8 +80,7 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintBottom_toTopOf="@+id/rbtnYellowPurpleOption"
         app:layout_constraintEnd_toEndOf="@+id/btnStartGame"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLogo"
-        app:layout_constraintVertical_bias="0.512">
+        app:layout_constraintTop_toBottomOf="@+id/txtChooseColor">
 
     </RadioButton>
 

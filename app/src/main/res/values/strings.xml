@@ -5,19 +5,20 @@ Stores the string values for this application
 Created By: Shaun Trimm
 Created On: 2-25-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 3-3-2020
+Last Modified On: 3-5-2020
 Assignment: A290 Final Project Phase 3
 -->
 
-    <!-- String resources automatically generated -->
-    <string name="app_name">Tic Tac Toe</string>
-    <string name="action_settings">Settings</string>
-
     <!-- String resources for the Home Screen -->
     <string name="start_game">Start Game</string>
+    <string name="app_heading">Tic-Tac-Toe</string>
+    <string name="choose_color_text">Choose a color scheme!</string>
 
-    <!-- Toolbar String resources -->
+    <!-- General Toolbar String resources -->
     <string name="about_text">About</string>
+
+    <!-- Game screen Toolbar String resources -->
     <string name="undo_text">Undo</string>
     <string name="clear_text">Clear</string>
+
 </resources>
