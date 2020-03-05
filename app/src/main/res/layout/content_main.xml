@@ -17,7 +17,7 @@ Assignment: A290 Final Project Phase 3
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-
+    <!-- Displays the App name -->
     <TextView
         android:id="@+id/txtLogo"
         android:layout_width="wrap_content"
@@ -31,6 +31,7 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.048" />
 
+    <!-- Displays the text which tells the user to choose a color -->
     <TextView
         android:id="@+id/txtChooseColor"
         android:layout_width="wrap_content"
@@ -42,6 +43,7 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtLogo"></TextView>
 
+    <!-- Starts the game -->
     <Button
         android:id="@+id/btnStartGame"
         android:layout_width="wrap_content"
@@ -55,6 +57,7 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintTop_toBottomOf="@+id/txtLogo"
         app:layout_constraintVertical_bias="0.796"></Button>
 
+    <!-- Radio Button for the Yellow Purple color scheme -->
     <RadioButton
         android:id="@+id/rbtnYellowPurpleOption"
         android:layout_width="wrap_content"
@@ -69,6 +72,7 @@ Assignment: A290 Final Project Phase 3
 
     </RadioButton>
 
+    <!-- Radio Button for the Red Blue color scheme -->
     <RadioButton
         android:id="@+id/rbtnBlueRedOption"
         android:layout_width="wrap_content"

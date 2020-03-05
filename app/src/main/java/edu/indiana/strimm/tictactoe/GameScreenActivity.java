@@ -1,7 +1,11 @@
 package edu.indiana.strimm.tictactoe;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
@@ -30,6 +34,8 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
     RadioButton rbtnCircleOption;
     RadioButton rbtnXOption;
     int selectedShape; //Stores the value for the selected shape 0 for circle 1 for x
+    String[] confirmMenuOptions = {"Yes", "No"};
+
 
 
     @Override
@@ -104,7 +110,17 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         }
         //If the clear button is pressed
         else if(id == R.id.itmGameClear){
-            clearGrid();
+            new AlertDialog.Builder(this).setTitle("Are you sure you want to clear the grid?")
+                    .setIcon(R.mipmap.logo).setItems(confirmMenuOptions, new android.content.DialogInterface.OnClickListener()
+                    {
+                        public void onClick(DialogInterface d, int i){
+                            if(i == 0){
+                                clearGrid();
+                            }
+                        }
+                    }
+            ).show();
+            //clearGrid();
         }
         //If the undo button is pressed
         else if(id == R.id.itmGameUndo){
@@ -188,5 +204,6 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
             }
         }
     }
+
 
 }
