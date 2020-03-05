@@ -5,7 +5,7 @@ Controls permissions for java classes to create intents
 Created By: Shaun Trimm
 Created On: 2-25-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 2-29-2020
+Last Modified On: 3-5-2020
 Assignment: A290 Final Project Phase 3
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,7 +14,7 @@ Assignment: A290 Final Project Phase 3
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
-        android:label="Tic Tac Toe"
+        android:label="Tic-Tac-Toe"
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
