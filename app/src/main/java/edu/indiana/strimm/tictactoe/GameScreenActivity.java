@@ -174,6 +174,16 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
     public void undo(){
         if(!editedImages.isEmpty()){
             editedImages.pop().setImageDrawable(null);
+            if(this.selectedShape == 0){
+                selectedShape = 1;
+                this.rbtnXOption.setChecked(true);
+                this.rbtnCircleOption.setChecked(false);
+            }
+            else if (this.selectedShape == 1){
+                selectedShape = 0;
+                this.rbtnXOption.setChecked(false);
+                this.rbtnCircleOption.setChecked(true);
+            }
         }
     }
 
