@@ -17,7 +17,7 @@ Controls the Game Screen
 Created By: Shaun Trimm
 Created On: 2-28-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 3-3-2020
+Last Modified On: 3-4-2020
 Assignment: A290 Final Project Phase 3
  */
 
@@ -175,11 +175,13 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         if(!editedImages.isEmpty()){
             editedImages.pop().setImageDrawable(null);
             if(this.selectedShape == 0){
+                //Reverts to the shape that is removed from the game grid
                 selectedShape = 1;
                 this.rbtnXOption.setChecked(true);
                 this.rbtnCircleOption.setChecked(false);
             }
             else if (this.selectedShape == 1){
+                //Reverts to the shape that is removed from the game grid
                 selectedShape = 0;
                 this.rbtnXOption.setChecked(false);
                 this.rbtnCircleOption.setChecked(true);
