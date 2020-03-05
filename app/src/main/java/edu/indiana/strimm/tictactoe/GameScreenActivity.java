@@ -120,7 +120,6 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
                         }
                     }
             ).show();
-            //clearGrid();
         }
         //If the undo button is pressed
         else if(id == R.id.itmGameUndo){
