@@ -15,7 +15,7 @@ Controls the Home screen
 Created By: Shaun Trimm
 Created On: 2-25-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 3-1-2020
+Last Modified On: 3-6-2020
 Assignment: A290 Final Project Phase 3
  */
 
@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //keeps the title text from showing
         getSupportActionBar().setTitle(null);
 
+        //Initializes the Radio Buttons for the color scheme options
         rbtnBlueRedOption = findViewById(R.id.rbtnBlueRedOption);
         rbtnYellowPurpleOption = findViewById(R.id.rbtnYellowPurpleOption);
 

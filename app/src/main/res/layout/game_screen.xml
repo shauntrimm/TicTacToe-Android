@@ -5,7 +5,7 @@ Controls the layout for the game screen
 Created By: Shaun Trimm
 Created On: 2-28-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 3-1-2020
+Last Modified On: 3-6-2020
 Assignment: A290 Final Project Phase 3
 -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,7 +20,7 @@ Assignment: A290 Final Project Phase 3
 
     <!-- Leftmost Vertical Line in the grid -->
     <View
-        android:id="@+id/view"
+        android:id="@+id/viewLeftLine"
         android:layout_width="1dp"
         android:layout_height="440dp"
         android:background="@color/toolbar_text_color"
@@ -34,6 +34,7 @@ Assignment: A290 Final Project Phase 3
 
     <!-- Rightmost Vertical line in the grid -->
     <View
+        android:id="@+id/viewRightLine"
         android:layout_width="1dp"
         android:layout_height="440dp"
         android:background="@color/toolbar_text_color"
@@ -48,6 +49,7 @@ Assignment: A290 Final Project Phase 3
 
     <!-- Uppermost Horizontal line -->
     <View
+        android:id="@+id/viewTopLine"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/toolbar_text_color"
@@ -61,7 +63,7 @@ Assignment: A290 Final Project Phase 3
         android:layout_width="match_parent"
         android:layout_height="102dp"
         android:background="@color/colorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintBottom_toTopOf="@+id/viewLeftLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,6 +72,7 @@ Assignment: A290 Final Project Phase 3
 
     <!-- Lowermost Horizontal line -->
     <View
+        android:id="@+id/viewLowLine"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/toolbar_text_color"
@@ -78,6 +81,7 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgView5"></View>
 
+    <!-- imgView1 - imgView9, represent the different tiles in the grid -->
     <ImageView
         android:id="@+id/imgView1"
         android:onClick="onClick"
@@ -186,6 +190,7 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.726" />
 
+        <!-- Radio button which shows if circle is selected -->
         <RadioButton
             android:id="@+id/rbtnCircleOption"
             android:layout_width="wrap_content"
@@ -196,6 +201,7 @@ Assignment: A290 Final Project Phase 3
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imgView7" />
 
+    <!-- Radio button which shows if circle is selected -->
         <RadioButton
             android:id="@+id/rbtnXOption"
             android:layout_width="wrap_content"

@@ -1,10 +1,8 @@
 package edu.indiana.strimm.tictactoe;
 
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -21,7 +19,7 @@ Controls the Game Screen
 Created By: Shaun Trimm
 Created On: 2-28-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 3-4-2020
+Last Modified On: 3-6-2020
 Assignment: A290 Final Project Phase 3
  */
 
@@ -34,7 +32,7 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
     RadioButton rbtnCircleOption;
     RadioButton rbtnXOption;
     int selectedShape; //Stores the value for the selected shape 0 for circle 1 for x
-    String[] confirmMenuOptions = {"Yes", "No"};
+    String[] confirmMenuOptions = {"Yes", "No"}; //Stores the options for the confirmation dialog window
 
 
 
@@ -110,10 +108,12 @@ public class GameScreenActivity extends AppCompatActivity implements View.OnClic
         }
         //If the clear button is pressed
         else if(id == R.id.itmGameClear){
+            //Asks the user if they want to clear the game board
             new AlertDialog.Builder(this).setTitle("Are you sure you want to clear the grid?")
                     .setIcon(R.mipmap.logo).setItems(confirmMenuOptions, new android.content.DialogInterface.OnClickListener()
                     {
                         public void onClick(DialogInterface d, int i){
+                            //if Yes is clicked
                             if(i == 0){
                                 clearGrid();
                             }

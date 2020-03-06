@@ -5,20 +5,16 @@ Stores the Color values for this application
 Created By: Shaun Trimm
 Created On: 2-25-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 3-3-2020
+Last Modified On: 3-6-2020
 Assignment: A290 Final Project Phase 3
 -->
 <resources>
-    <!-- Toolbar colors -->
+    <!-- Color used for the background -->
     <color name="colorPrimary">#FAFAFA</color>
+    <!-- Color used for text in this application -->
     <color name="toolbar_text_color">#808080</color>
+    <!-- Color used for the status bar -->
     <color name="colorPrimaryDark">#fff3f3f3</color>
 
 
-    <!-- <color name="colorAccent">#D81B60</color> -->
-
-
-    <!-- Color values that may be used -->
-    <color name="blue">#006cff</color>
-    <color name="red">#f5364d</color>
 </resources>

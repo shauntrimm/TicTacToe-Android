@@ -9,9 +9,10 @@ Controls the items on the toolbar on the Home Screen
 Created By: Shaun Trimm
 Created On: 2-25-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 2-28-2020
+Last Modified On: 3-6-2020
 Assignment: A290 Final Project Phase 3
 -->
+    <!-- Menu button that takes you to the about screen -->
     <item
         android:id="@+id/itmHomeAbout"
         android:title="@string/about_text"

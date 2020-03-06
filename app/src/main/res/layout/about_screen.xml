@@ -5,7 +5,7 @@ Controls the layout for the About screen
 Created By: Shaun Trimm
 Created On: 2-29-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 3-5-2020
+Last Modified On: 3-6-2020
 Assignment: A290 Final Project Phase 3
 -->
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,6 +15,8 @@ Assignment: A290 Final Project Phase 3
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <!-- Heading text -->
     <TextView
         android:id="@+id/txtWelcomeHeading"
         android:layout_width="wrap_content"
@@ -26,6 +28,7 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintBottom_toTopOf="@id/txtGameAbout"
         app:layout_constraintTop_toTopOf="parent"></TextView>
 
+    <!-- Text describing the game -->
     <TextView
         android:id="@+id/txtWelcome"
         android:layout_width="wrap_content"
@@ -37,6 +40,7 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtWelcomeHeading"></TextView>
 
+    <!-- Game about heading-->
     <TextView
         android:id="@+id/txtGameAboutHeading"
         android:layout_width="wrap_content"
@@ -49,6 +53,7 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintStart_toStartOf="@+id/txtWelcome"
         app:layout_constraintTop_toBottomOf="@id/txtWelcome"></TextView>
 
+    <!-- Text which explains how the application works -->
     <TextView
         android:id="@+id/txtGameAbout"
         android:layout_width="350dp"
@@ -60,6 +65,7 @@ Assignment: A290 Final Project Phase 3
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Thank you message -->
     <TextView
         android:id="@+id/txtThankYou"
         android:layout_width="wrap_content"

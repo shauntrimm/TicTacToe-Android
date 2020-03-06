@@ -5,7 +5,7 @@ Stores the string values for this application
 Created By: Shaun Trimm
 Created On: 2-25-2020
 Last Modified By: Shaun Trimm
-Last Modified On: 3-5-2020
+Last Modified On: 3-6-2020
 Assignment: A290 Final Project Phase 3
 -->
 
@@ -28,13 +28,15 @@ Assignment: A290 Final Project Phase 3
     <string name="getting_started">Beginning on the Home Screen you will see the logo and the color scheme options.
         From here you can choose any of the two color options to play Tic-Tac-Toe with and hit the "Start Game!" button to begin playing.</string>
     <string name="game_about_heading">Playing the Game:</string>
-    <string name="game_about">When you arrive on the Game Screen you will see the 3x3 game grid along with two buttons with the symbols next to them. Whichever symbol is selected will be indicated by a the circle on the left of it, if the circle next to the symbol is filled in then it is selected, and vice versa.
+    <string name="game_about">When you arrive on the Game Screen you will see the 3x3 game grid along with two buttons with the symbols next to them.
+        Whichever symbol is selected will be indicated by a the circle on the left of it, if the circle next to the symbol is filled in then it is selected, and vice versa.
         After placing a symbol the selected symbol will swap automatically in order to reduce the need for players to select their shape at the beginning of each turn.
         If you wish to change the selected shape, you can simply touch the shape of your choosing at the bottom of the screen.
         The game related commands on the Game Screen are as follows, Undo, and Clear.
         Undo reverses the last symbol placed on the grid and also reverts the
         selected symbol to the opposite of the one that is currently selected.
         Clear simply removes all symbols from the game grid allowing you to start from scratch.</string>
+
     <string name="thank_you">Thank You for playing!</string>
 
 </resources>
